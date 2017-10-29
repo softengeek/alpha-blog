@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(Array) %>
+    <% msg.each do |name| %>
+      <li><%= name %></li>
+    <% end %>
+  <% else %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
+<% end %>
 <%= yield %>
 
 </body>
