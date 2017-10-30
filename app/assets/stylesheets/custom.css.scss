@@ -1,2 +1,94 @@
+$navbar-default-bg: #a9bd19;
+$primary-color: #8daea7;
+$hover-color: #565656;
+
+.navbar-brand {
+  float: none !important;
+  line-height: 5vh !important;
+}
+
+.nav.navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  color: white;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('desktop.jpg');
+  background-size: cover;
+  height: 80vh;
+}
+
+.jumbotron h1 {
+  padding-top: 18vh;
+  padding-left: 30vw;
+  color: $primary-color;
+  font-size: 6em;
+}
+
+.jumbotron a {
+  width: 10%;
+  box-shadow: 0 7px 20px rgba(0,0,0,0.2);
+  padding-top: 1.5vh;
+  height: 6vh;
+  font-size: 1.4em;
+  border: none;
+  margin-top: 4vh;
+  background-color: $navbar-default-bg;
+  margin-left: 29vw;
+}
+
+.jumbotron a:hover, .jumbotron a:focus, .jumbotron a:active {
+  background-color: $hover-color !important;
+  border: none;
+}
+
+.jumbotron a:active {
+  box-shadow: none;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $hover-color;
+  color: white;
+  height: 7vh;
+  background-color: $hover-color;
+}
+
+footer a:hover {
+  color: $primary-color;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
