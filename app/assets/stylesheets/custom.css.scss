@@ -92,3 +92,24 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+.form-horizontal .btn {
+  height: 60px;
+}
+
+.form-horizontal .btn-primary {
+  background-color: $navbar-default-bg !important;
+}
+
+.form-horizontal .btn-danger {
+  line-height: 2;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}

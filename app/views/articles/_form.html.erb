@@ -1,27 +1,33 @@
-<% if @article.errors.any? %>
-  <h2>The following erros were found: </h2>
-  <ul>
-    <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render "shared/errors", obj: @article %>
         
+<div class="row">
+  <div class="col-xs-12">
+    <%= form_for(@article, :html => {class: "form-horizontal", role: "form" }) do |a| %>
+      <div class="form-group">
+        <div class="col-sm-2 control-label">
+          <%= a.label :title %>
+        </div>
+        <div class="col-sm-8">
+          <%= a.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %>
+        </div>
+      </div>
       
-<%= form_for @article do |a| %>
-  <p>
-    <%= a.label :title %> <br />
-    <%= a.text_field :title %>
-  </p>
-  
-  <p>
-    <%= a.label :description %><br />
-    <%= a.text_area :description %>
-  </p>
-  
-  <p>
-    <%= a.submit %>
-  </p>
-<% end %>
-
-<%= link_to "Back to Articles", articles_path %>
+      <div class="form-group">
+        <div class="col-sm-2 control-label">
+          <%= a.label :description %><br />
+        </div>
+        <div class="col-sm-8">
+          <%= a.text_area :description, rows: 10, class: "form-control", placeholder: "Title of Article", autofocus: true %>
+        </div>
+      </div>
+      <div class="form-group">
+        
+      <div class="form-group">
+        <div class="col-xs-offset-2 col-sm-8">
+          <%= a.submit class: "btn btn-primary btn-lg col-xs-2 pull-right" %>
+          <%= link_to "Cancel", articles_path, class: "btn btn-danger btn-lg col-xs-2" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

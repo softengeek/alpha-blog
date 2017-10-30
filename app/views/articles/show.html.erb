@@ -1,8 +1,14 @@
-<h1>Article</h1>
+<h2 class="text-center">Title: <%= @article.title %></h2>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 class="text-center description"><strong>Description</strong></h4>
+  <hr />
+  <p><%= simple_format(@article.description) %></p>
+  <div class="article-actions">
+    <%= link_to "Edit Article", edit_article_path(@article), class: "btn btn-success btn-sm" %> 
+    <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-sm" %> 
+    <%= link_to "All Articles", articles_path, class: "btn btn-warning btn-sm" %>
+  </div>
+</div>
 
-<p>Title: <%= @article.title %></p>
-<p>Description: <%= @article.description %></p>
 
-<%= link_to "Edit Article", edit_article_path(@article) %> | 
-<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %> | 
-<%= link_to "Back to Articles", articles_path %>
+
