@@ -1,0 +1,24 @@
+[33mc97414f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: commit: css
+[33md5eb603[m HEAD@{1}: checkout: moving from user-associations to master
+[33m1072086[m[33m ([m[1;31morigin/user-associations[m[33m)[m HEAD@{2}: commit: user associations
+[33md5eb603[m HEAD@{3}: checkout: moving from master to user-associations
+[33md5eb603[m HEAD@{4}: merge validating-users: Fast-forward
+[33m79a7372[m HEAD@{5}: checkout: moving from validating-users to master
+[33md5eb603[m HEAD@{6}: commit: validated users
+[33m79a7372[m HEAD@{7}: checkout: moving from master to validating-users
+[33m79a7372[m HEAD@{8}: merge create-users: Fast-forward
+[33mf103084[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{9}: checkout: moving from create-users to master
+[33m79a7372[m HEAD@{10}: commit: Added create users
+[33mf103084[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{11}: checkout: moving from master to create-users
+[33mf103084[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{12}: commit: All Apps
+[33m416c9d9[m HEAD@{13}: commit: Show styles
+[33m28b804b[m HEAD@{14}: commit: Redesigned alph blog
+[33m8a81de6[m HEAD@{15}: commit: added bootstrap
+[33mc8bd240[m HEAD@{16}: commit: fixed show error
+[33m5b84bd8[m HEAD@{17}: commit: added before action
+[33m99c112b[m HEAD@{18}: commit: Added Partilas and destroy
+[33m69b41c1[m HEAD@{19}: commit: Added edit and home page
+[33m05243db[m HEAD@{20}: commit: Created new, show and create
+[33m76b4594[m HEAD@{21}: commit: created articles table and model and validation
+[33m19f7f5f[m HEAD@{22}: commit: Make app prouction ready
+[33m46d8f3a[m HEAD@{23}: commit (initial): Create rails application for alpha blog
